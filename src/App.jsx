@@ -7,20 +7,22 @@ import Projects from './components/Projects'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import CustomCursor from "./customs/CustomCursor.jsx";
 
 const App = () => {
-  return (
-    <>
-      <ParticleBackground />
-      <Navbar />
-      <Hero />
-      <About/>
-      <Projects/>
-      <Testimonials/>
-      <Contact/>
-      <Footer/>
-    </>
-  )
+    return (
+        <>
+            <CustomCursor />
+            <ParticleBackground/>
+            <Navbar/>
+            <Hero/>
+            <About/>
+            <Projects/>
+            <Testimonials/>
+            <Contact/>
+            <Footer/>
+        </>
+    )
 }
 
 export default App
