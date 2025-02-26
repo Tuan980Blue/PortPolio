@@ -53,7 +53,7 @@ const Testimonials = () => {
             <div className='max-w-6xl mx-auto py-10 px-5'>
                 <Swiper
                     style={{
-                        "--swiper-pagination-color": "#EF4444",
+                        "--swiper-pagination-color": "#00bcd4",
                         "--swiper-pagination-bullet-inactive-color": "#999999",
                         "--swiper-pagination-bullet-inactive-opacity": "1",
                         "--swiper-pagination-bullet-size": "10px",
@@ -80,7 +80,7 @@ const Testimonials = () => {
                 >
                     {testimonials.map((item) => {
                         return <SwiperSlide key={item.id}>
-                            <div className='border border-gray-400 shadow-md shadow-red-500 rounded-lg flex flex-col p-4'>
+                            <div className='border border-gray-400 shadow-md shadow-cyan-500 rounded-lg flex flex-col p-4'>
                                 {item.rating === 4 ? (
                                     <div className='flex'>
                                         <Star fill='true' />
@@ -101,10 +101,10 @@ const Testimonials = () => {
                                 <p className='py-3'>{item.text}</p>
                                 <div className='flex justify-between items-center'>
                                     <div>
-                                        <h3 className='font-semibold text-red-500 text-lg'>{item.name}</h3>
+                                        <h3 className='font-semibold text-cyan-500 text-lg'>{item.name}</h3>
                                         <p className='text-sm mt-1'>CEO, Webelite Builders</p>
                                     </div>
-                                    <Quote className='text-red-400'/>
+                                    <Quote className='text-cyan-400'/>
                                 </div>
                             </div>
                         </SwiperSlide>

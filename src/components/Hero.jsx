@@ -47,11 +47,11 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className='absolute top-40 right-10 hidden bg-gray-200 p-4 md:flex flex-col gap-6 rounded-full'><a
-                href="https://www.facebook.com/tuananhhuflit" target="_blank" rel="noopener noreferrer">
+            <div className='absolute top-40 right-10 hidden bg-gray-200 p-4 md:flex flex-col gap-6 rounded-full'>
+                <a href="https://www.facebook.com/tuananhhuflit" target="_blank" rel="noopener noreferrer">
                 <FaFacebook size={40} alt="Facebook"
                             className='w-12 text-blue-600 cursor-pointer transition-transform transform hover:scale-110'/>
-            </a>
+                </a>
                 <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                     <FaInstagramSquare size={40} alt="Instagram"
                                        className='w-12 text-pink-600 cursor-pointer transition-transform transform hover:scale-110'/>
