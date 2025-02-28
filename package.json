@@ -13,6 +13,7 @@
     "@tsparticles/react": "^3.0.0",
     "cross-env": "^7.0.3",
     "framer-motion": "^12.4.7",
+    "gsap": "^3.12.7",
     "lottie-react": "^2.4.0",
     "lucide-react": "^0.453.0",
     "react": "^18.3.1",
