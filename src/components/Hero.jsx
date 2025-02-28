@@ -59,11 +59,17 @@ const Hero = () => {
                                 Passionate about modern web technologies, I specialize in React and crafting engaging
                                 digital experiences.
                             </motion.p>
-                            <div className={"w-96"}>
-                                <SliderLogo/>
-                            </div>
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 1.8 }}
+                                className="mt-4 w-96 overflow-hidden">
+                                <div >
+                                    <SliderLogo/>
+                                </div>
+                            </motion.div>
                             <motion.a
-                                href="https://drive.google.com/file/d/1bo5Uwg6AotcgGIzhyZEEaww_a70ZPwz_/view?usp=drive_link"
+                                href="https://drive.google.com/file/d/1W7qxq70dsjR6olSmXPk4zVWCq-t-awcW/view?usp=drive_link"
                                 target='_blank'
                                 rel='noopener noreferrer'
                                 className='bg-cyan-400 text-white px-3 py-2 md:px-5 md:py-3 rounded-lg font-semibold inline-block hover:bg-cyan-500 transition-all'
