@@ -8,10 +8,12 @@ import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import CustomCursor from "./customs/CustomCursor.jsx";
+import SliderSlogan from "./customs/SliderSlogan.jsx";
 
 const App = () => {
     return (
         <>
+            <SliderSlogan/>
             <CustomCursor />
             <ParticleBackground/>
             <Navbar/>
