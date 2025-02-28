@@ -34,8 +34,8 @@ const CustomCursor = () => {
     return (
         <motion.div
             animate={{
-                x: position.x - 10,
-                y: position.y - 10,
+                x: position.x -10,
+                y: position.y - 5,
                 width: hovered ? 40 : 20,
                 height: hovered ? 40 : 20,
                 backgroundColor: hovered ? "rgba(255, 0, 0, 0.7)" : "rgba(0, 0, 255, 0.7)",

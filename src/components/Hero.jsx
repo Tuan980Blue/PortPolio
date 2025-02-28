@@ -7,6 +7,7 @@ import tailwindLogo from '../assets/Tailwind Css.png';
 import tuanGif from '../assets/Tuan.gif';
 import tuanStatic from '../assets/Tuan3.png';
 import SliderLogo from "../customs/SliderLogo.jsx";
+import CircularLogoSlider from "../customs/CircularLogoSlider.jsx";
 
 const Hero = () => {
     const [currentImage, setCurrentImage] = useState(tuanGif);
@@ -102,25 +103,12 @@ const Hero = () => {
 
                 {/* Social Links */}
                 <motion.div
-                    className='absolute top-40 right-10 hidden bg-gray-200 p-4 md:flex flex-col gap-6 rounded-full shadow-lg'
+                    className='absolute top-40 right-1 hidden lg:flex'
                     initial={{opacity: 0, x: 50}}
                     animate={{opacity: 1, x: 0}}
                     transition={{duration: 1.5, delay: 3}}
                 >
-                    {socialLinks.map(({Icon, color}, index) => (
-                        <motion.a
-                            key={index}
-                            href='#'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            initial={{opacity: 0, scale: 0.5}}
-                            animate={{opacity: 1, scale: 1}}
-                            transition={{duration: 0.5, delay: 3.2 + index * 0.2}}
-                            className={`${color} transition-transform transform hover:scale-110`}
-                        >
-                            <Icon size={40} className='cursor-pointer'/>
-                        </motion.a>
-                    ))}
+                    <CircularLogoSlider/>
                 </motion.div>
             </div>
         </section>
