@@ -6,6 +6,7 @@ import reduxLogo from '../assets/Redux.png';
 import tailwindLogo from '../assets/Tailwind Css.png';
 import tuanGif from '../assets/Tuan.gif';
 import tuanStatic from '../assets/Tuan3.png';
+import SliderLogo from "../customs/SliderLogo.jsx";
 
 const Hero = () => {
     const [currentImage, setCurrentImage] = useState(tuanGif);
@@ -58,6 +59,9 @@ const Hero = () => {
                                 Passionate about modern web technologies, I specialize in React and crafting engaging
                                 digital experiences.
                             </motion.p>
+                            <div className={"w-96"}>
+                                <SliderLogo/>
+                            </div>
                             <motion.a
                                 href="https://drive.google.com/file/d/1bo5Uwg6AotcgGIzhyZEEaww_a70ZPwz_/view?usp=drive_link"
                                 target='_blank'
@@ -114,7 +118,7 @@ const Hero = () => {
                 </motion.div>
             </div>
         </section>
-);
+    );
 };
 
 export default Hero;
