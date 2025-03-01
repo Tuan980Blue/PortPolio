@@ -4,7 +4,7 @@ import Github from '../assets/Github.png'
 const Cards = ({ item }) => {
     return (
         <div className='border border-cyan-500 rounded-lg w-[350px] lg:w-[400px] bg-cyan-50'>
-            <img src={item.image} alt="" className='rounded-lg' />
+            <img src={item.image} alt="" className='rounded-lg lg:h-56 h-44 w-full items-center justify-center' />
             <div className='p-4'>
                 <h1 className='font-semibold text-xl mb-2'>{item.title}</h1>
                 <p>{item.desc}</p>
