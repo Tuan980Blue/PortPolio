@@ -15,8 +15,8 @@ const App = () => {
         <>
             <CustomCursor />
             <ParticleBackground/>
-            <SliderSlogan/>
             <Navbar/>
+            <SliderSlogan/>
             <Hero/>
             <About/>
             <Projects/>
