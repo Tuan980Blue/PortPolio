@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Logo from '../assets/Logo.png'
 import { Menu, X } from 'lucide-react'
+import {FaChevronRight} from "react-icons/fa";
 
 const Navbar = () => {
     const [mobileMenuOpen, setmMobileMenuOpen] = useState(false)
@@ -15,13 +16,20 @@ const Navbar = () => {
                 <a href="#about" className='transition-colors hover:text-foreground/80 text-foreground/60'>About</a>
                 <a href="#projects" className='transition-colors hover:text-foreground/80 text-foreground/60'>Projects</a>
                 <a href="#testimonials" className='transition-colors hover:text-foreground/80 text-foreground/60'>Testimonials</a>
-                <a href="#contact" className='transition-colors hover:text-foreground/80 text-foreground/60'>Contact</a>
+                <a href="#contact">
+                    <button
+                        className="px-3 py-1 cursor-pointer rounded-md bg-cyan-500 text-white flex items-center gap-1 shadow-[0_0_5px_#22d3ee,inset_0_0_2px_#e0f2fe,0_0_10px_#06b6d4,0_0_20px_#06b6d4] border-2 border-cyan-400 transition-all hover:bg-cyan-600"
+                    >
+                        Contact <FaChevronRight/>
+                    </button>
+                </a>
             </nav>
         </div>
-        <button className='inline-flex items-center justify-center rounded-md md:hidden' onClick={()=>setmMobileMenuOpen(!mobileMenuOpen)}>
-           <span className='sr-only'>Open main menu</span>
-           {mobileMenuOpen ? (
-            <X className='h-6 w-6' aria-hidden="true"/>
+          <button className='inline-flex items-center justify-center rounded-md md:hidden'
+                  onClick={() => setmMobileMenuOpen(!mobileMenuOpen)}>
+              <span className='sr-only'>Open main menu</span>
+              {mobileMenuOpen ? (
+                  <X className='h-6 w-6' aria-hidden="true"/>
            ):(
             <Menu className='h-6 w-6' aria-hidden="true"/>
            )}

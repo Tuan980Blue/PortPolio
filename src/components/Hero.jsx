@@ -8,6 +8,7 @@ import tuanGif from '../assets/Tuan.gif';
 import tuanStatic from '../assets/Tuan3.png';
 import SliderLogo from "../customs/SliderLogo.jsx";
 import CircularLogoSlider from "../customs/CircularLogoSlider.jsx";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 const Hero = () => {
     const [currentImage, setCurrentImage] = useState(tuanGif);
@@ -71,14 +72,15 @@ const Hero = () => {
                             </motion.div>
                             <motion.a
                                 href="https://drive.google.com/file/d/1W7qxq70dsjR6olSmXPk4zVWCq-t-awcW/view?usp=drive_link"
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                className='bg-cyan-400 text-white px-3 py-2 md:px-5 md:py-3 rounded-lg font-semibold inline-block hover:bg-cyan-500 transition-all'
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 bg-cyan-400 text-white px-4 py-2 rounded-lg font-semibold hover:bg-cyan-500 transition-all"
                                 initial={{scale: 0}}
                                 animate={{scale: 1}}
                                 transition={{duration: 0.5, delay: 1.5}}
                             >
-                                Download CV
+                                <MdOutlineFileDownload className="w-5 h-5"/>
+                                <span>Download CV</span>
                             </motion.a>
                         </motion.div>
                     </div>
