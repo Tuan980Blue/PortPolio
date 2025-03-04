@@ -64,11 +64,11 @@ const About = () => {
                         <div className='mt-10'>
                             <div className='grid grid-cols-1 gap-12 lg:grid-cols-2'>
                                 <div className="flex flex-col items-center justify-center gap-8 mt-6">
-                                    <div className={"flex flex-col-1 sm:flex-col-2 gap-4 items-center justify-center"}>
+                                    <div className={"flex flex-col-1 sm:flex-col-2 md:gap-6 gap-4 items-center justify-center"}>
                                         <motion.img
                                             src={currentSrc}
                                             alt="Tuan Profile"
-                                            className="rounded-full border-4 border-cyan-500 w-24 md:w-32 lg:w-52 shadow-xl hover:scale-105 transition-transform duration-300"
+                                            className="rounded-full border-4 border-cyan-500 w-40 lg:w-52 shadow-xl hover:scale-105 transition-transform duration-300"
                                             initial={{opacity: 0, scale: 0.5}}
                                             whileInView={{opacity: 1, scale: 1}}
                                             transition={{duration: 1.2}}
