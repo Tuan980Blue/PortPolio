@@ -4,6 +4,7 @@ import { loadFull } from "tsparticles";
 
 export default function Particle() {
   const [init, setInit] = useState(false);
+  const [bgColor, setBgColor] = useState("#e0f7fa"); // Màu nền mặc định
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -12,6 +13,23 @@ export default function Particle() {
       setInit(true);
     });
   }, []);
+
+  // Lắng nghe kích thước màn hình để thay đổi màu nền
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setBgColor("#ffffff"); // Khi màn hình nhỏ hơn hoặc bằng md, đổi nền thành trắng
+      } else {
+        setBgColor("#e0f7fa"); // Màn hình lớn hơn md thì giữ màu nền tươi mát
+      }
+    };
+
+    handleResize(); // Gọi ngay khi component mount
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
 
   return (
       <>
@@ -22,8 +40,7 @@ export default function Particle() {
                 options={{
                   background: {
                     color: {
-                      value: "#e0f7fa", // Màu nền tươi mát
-
+                      value: bgColor,
                     },
                   },
                   fpsLimit: 120,
