@@ -183,20 +183,20 @@ const About = () => {
                             whileInView={{opacity: 1, scale: 1}}
                             transition={{duration: 1.4, delay: 0}}
                         >
-                            <h2 className="text-3xl font-bold text-gray-800 border-b-2 border-blue-300 pb-3 flex items-center gap-3">
+                            <h2 className="text-xl md:text-2xl font-bold text-gray-800 border-b-2 border-blue-300 pb-3 flex items-center gap-3">
                                 <FaUniversity className="text-blue-500"/> Học Vấn
                             </h2>
-                            <div className="flex items-start gap-8 mt-8">
+                            <div className="flex items-start gap-8 mt-6">
                                 <img
                                     src={LogoHuflit}
                                     alt="University Logo"
                                     className="w-28 object-cover"
                                 />
-                                <div>
-                                    <p className="text-2xl font-semibold text-gray-800">Trường Đại học Ngoại Ngữ và Tin Học TP.HCM</p>
-                                    <p className="text-lg text-gray-600 mt-2">Công nghệ thông tin (2021 - 2025)</p>
-                                    <p className="text-lg text-gray-600">Chuyên ngành: Công nghệ phần mềm</p>
-                                    <p className="text-lg text-gray-800 font-bold mt-2">GPA: 3.2/4</p>
+                                <div className={"flex flex-col"}>
+                                    <p className="text-xl md:text-2xl font-semibold text-gray-800 mb-1">Trường Đại học Ngoại Ngữ và Tin Học TP.HCM</p>
+                                    <p className="text-sm md:text-lg text-gray-600">Công nghệ thông tin (2021 - 2025)</p>
+                                    <p className="text-sm md:text-lg text-gray-600">Chuyên ngành: Công nghệ phần mềm</p>
+                                    <p className="text-sm md:text-lg text-gray-800 font-bold">GPA: 3.2/4</p>
                                 </div>
                             </div>
                         </motion.div>
