@@ -1,18 +1,21 @@
-import React from 'react'
-import MernStack from '../assets/mernstack.png'
+import React, {useState} from 'react'
 import Html from '../assets/Html.png'
 import Css from '../assets/CSS.png'
 import Javascript from '../assets/JS.png'
 import ReactLogo from '../assets/React.png'
-import ReduxLogo from '../assets/Redux.png'
+import CshapeLogo from '../assets/C-shape.png'
 import Tailwind from '../assets/Tailwind Css.png'
 import Bootstrap from '../assets/Bootstrap.png'
-import NodeLogo from '../assets/NodeLogo.png'
+import JavaLogo from '../assets/JavaLogo.png'
 import Mongodb from '../assets/mongodb.svg'
-import Express from '../assets/Express.png'
-import NextJs from '../assets/NextJs.png'
+import SqlLogo from '../assets/SqlLogo.png'
+import Springboot from '../assets/Springboot.png'
+import PostmanLogo from '../assets/PostmanLogo.png'
+import FigmaLogo from '../assets/Figma.png'
+import DockerLogo from '../assets/DockerLogo.png'
 import LogoHuflit from '../assets/Logo-Huflit.png'
-import TuanProfile from '../assets/Tuan3.png'
+import TuanProfile from '../../public/Tuan3.png'
+import TuanBienHinh from '../assets/TuanBienHinh.gif'
 import { FaUniversity } from "react-icons/fa";
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
@@ -35,6 +38,16 @@ const About = () => {
         };
     }, []);
 
+    const [currentSrc, setCurrentSrc] = useState(TuanBienHinh);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentSrc((prevSrc) => (prevSrc === TuanBienHinh ? TuanProfile : TuanBienHinh));
+        }, 4300); // 3 giây thay đổi một lần
+
+        return () => clearInterval(interval); // Dọn dẹp interval khi component unmount
+    }, []);
+
     return (
         <div className='relative' id='about'>
             <div className='bg-gray-100 py-12'>
@@ -44,46 +57,47 @@ const About = () => {
                         whileInView={{opacity: 1, scale: 1}}
                         transition={{duration: 1.4, delay: 0}}
                     >
-                        <h2 className="text-lg text-cyan-600 font-semibold uppercase text-center">
+                        <h2 className='text-3xl font-bold text-cyan-500 border-b border-cyan-500 w-max pb-2 flex items-center'>
                             About Me
                         </h2>
 
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-6">
-                            {/* Profile Image with Hover Effect */}
-                            <motion.img
-                                src={TuanProfile}
-                                alt="Tuan Profile"
-                                className="rounded-full border-4 border-cyan-500 w-36 md:w-48 shadow-xl hover:scale-105 transition-transform duration-300"
-                                initial={{opacity: 0, scale: 0.5}}
-                                whileInView={{opacity: 1, scale: 1}}
-                                transition={{duration: 1.2}}
-                            />
-
-                            {/* Introduction */}
-                            <div className="text-center md:text-left">
-                                <p className="text-2xl font-extrabold text-gray-900">Nguyen Anh Tuan</p>
-                                <p className="mt-3 text-lg text-gray-600">
-                                    A Full-Stack Developer with expertise in web development, WordPress,
-                                    SEO, and the MERN stack.
-                                </p>
-                            </div>
-                        </div>
                         <div className='mt-10'>
                             <div className='grid grid-cols-1 gap-12 lg:grid-cols-2'>
-                                <div>
+                                <div className="flex flex-col items-center justify-center gap-8 mt-6">
+                                    <div className={"flex flex-col-1 sm:flex-col-2 gap-4 items-center justify-center"}>
+                                        <motion.img
+                                            src={currentSrc}
+                                            alt="Tuan Profile"
+                                            className="rounded-full border-4 border-cyan-500 w-24 md:w-32 lg:w-52 shadow-xl hover:scale-105 transition-transform duration-300"
+                                            initial={{opacity: 0, scale: 0.5}}
+                                            whileInView={{opacity: 1, scale: 1}}
+                                            transition={{duration: 1.2}}
+                                        />
+                                        <div className="text-center md:text-left">
+                                            <p className="text-2xl font-extrabold text-gray-900">Nguyen Anh Tuan</p>
+                                            <p className="mt-3 text-lg text-gray-600">
+                                                A Full-Stack Developer with expertise in web development, WordPress,
+                                                SEO, and...
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
                                     <h3 className='text-2xl font-semibold text-gray-900'>My Journey</h3>
-                                    <p className='mt-4 text-lg text-gray-600'>
-                                        I started my journey in web development with a passion for creating intuitive
-                                        and scalable applications. With proficiency in the MERN stack (MongoDB,
-                                        Express.js, React, and Node.js), I have built Projects such as a full-stack food
-                                        ordering website , ajob portal, and even a LinkedIn clone. My projects
-                                        demonstrate my ability to integrate poweful backend solutions with sleek,
-                                        user-friendly frontend designs.
-                                    </p>
-                                    <img src={MernStack} alt="" className='p-2 rounded-lg w-52 mt-4'/>
+                                        <p className='mt-2 text-lg text-gray-600'>
+                                            I started my web development journey with a passion for creating intuitive
+                                            and scalable applications.
+                                            With fundamental knowledge of MVC, React, PostgreSQL, and Spring Boot, I
+                                            have built projects such as
+                                            order management systems, yard management platforms, full-stack websites,
+                                            and even a Shopee clone.
+                                            My projects showcase my ability to integrate powerful backend solutions with
+                                            beautiful, user-friendly
+                                            interface designs.
+                                        </p>
+                                    </div>
                                 </div>
                                 <div
-                                    className='border border-cyan-200 rounded-lg md:p-7 py-7  flex flex-col gap-8 items-center shadow-lg shadow-cyan-300'>
+                                    className='border border-cyan-200 rounded-lg md:p-7 py-7  flex flex-col gap-8 items-center justify-center max-h-max shadow-lg shadow-cyan-300'>
                                     <h3 className='text-2xl font-semibold text-cyan-600'>Skills & Expertise</h3>
                                     <div className='flex items-center justify-center flex-wrap gap-3'>
                                         <div
@@ -108,8 +122,8 @@ const About = () => {
                                         </div>
                                         <div
                                             className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                            <img src={ReduxLogo} alt="" className='w-8'/>
-                                            <span className='font-semibold'>Redux</span>
+                                            <img src={CshapeLogo} alt="" className='w-8'/>
+                                            <span className='font-semibold'>C #</span>
                                         </div>
                                         <div
                                             className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
@@ -123,8 +137,8 @@ const About = () => {
                                         </div>
                                         <div
                                             className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                            <img src={NodeLogo} alt="" className='w-10'/>
-                                            <span className='font-semibold'>Node Js</span>
+                                            <img src={JavaLogo} alt="" className='w-10'/>
+                                            <span className='font-semibold'>Java</span>
                                         </div>
                                         <div
                                             className='border border-cyan-300 flex items-center  w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
@@ -133,13 +147,28 @@ const About = () => {
                                         </div>
                                         <div
                                             className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                            <img src={Express} alt="" className='w-10'/>
-                                            <span className='font-semibold'>Express Js</span>
+                                            <img src={SqlLogo} alt="" className='w-10'/>
+                                            <span className='font-semibold'>SQL</span>
                                         </div>
                                         <div
                                             className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                            <img src={NextJs} alt="" className='w-9'/>
-                                            <span className='font-semibold'>Next Js</span>
+                                            <img src={Springboot} alt="" className='w-9'/>
+                                            <span className='font-semibold'>Spring Boot</span>
+                                        </div>
+                                        <div
+                                            className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
+                                            <img src={PostmanLogo} alt="" className='w-9'/>
+                                            <span className='font-semibold'>Postman</span>
+                                        </div>
+                                        <div
+                                            className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
+                                            <img src={FigmaLogo} alt="" className='w-9'/>
+                                            <span className='font-semibold'>Figma</span>
+                                        </div>
+                                        <div
+                                            className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
+                                            <img src={DockerLogo} alt="" className='w-9'/>
+                                            <span className='font-semibold'>Docker</span>
                                         </div>
                                     </div>
                                 </div>

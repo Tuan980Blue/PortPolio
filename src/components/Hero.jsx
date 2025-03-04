@@ -4,8 +4,8 @@ import { FaFacebook, FaInstagramSquare, FaGithub, FaLinkedin, FaTwitterSquare } 
 import reactLogo from '../assets/React.png';
 import reduxLogo from '../assets/Redux.png';
 import tailwindLogo from '../assets/Tailwind Css.png';
-import tuanGif from '../assets/Tuan.gif';
-import tuanStatic from '../assets/Tuan3.png';
+import tuanGif from '../../public/Tuan.gif';
+import tuanStatic from '../../public/Tuan3.png';
 import SliderLogo from "../customs/SliderLogo.jsx";
 import CircularLogoSlider from "../customs/CircularLogoSlider.jsx";
 import { MdOutlineFileDownload } from "react-icons/md";
