@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="flex flex-wrap justify-between items-start mb-8">
                     <div className="w-full md:w-1/2 lg:w-1/4 p-4">
                         <div className="flex items-center mb-4">
-                            <img src={"/logoT.jpg"} alt="Logo" className="w-16 h-16 rounded-full shadow-lg"/>
+                            <img src={"/logoT.png"} alt="Logo" className="w-16 h-16 rounded-full shadow-lg"/>
                             <span className="text-2xl font-bold ml-3">tuananhhuflit.edu.vn</span>
                         </div>
                         <p className="text-gray-700">Công TTHH một thành viên Tuan Anh Junior @tuananh21 quản lý bởi FPT
