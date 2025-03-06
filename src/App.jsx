@@ -13,7 +13,7 @@ import SliderSlogan from "./customs/SliderSlogan.jsx";
 const App = () => {
     return (
         <>
-            <CustomCursor />
+            {/*<CustomCursor />*/}
             <ParticleBackground/>
             <Navbar/>
             <SliderSlogan/>
