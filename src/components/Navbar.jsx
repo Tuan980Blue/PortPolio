@@ -13,12 +13,12 @@ const Navbar = () => {
                 <img src={Logo} alt="" className='w-36' />
             </a>
             <nav className='md:flex hidden items-center space-x-6 text-lg font-medium'>
-                <a href="#about" className='transition-colors hover:text-foreground/80 text-foreground/60'>About</a>
-                <a href="#projects" className='transition-colors hover:text-foreground/80 text-foreground/60'>Projects</a>
-                <a href="#testimonials" className='transition-colors hover:text-foreground/80 text-foreground/60'>Testimonials</a>
+                <a href="#about" className='transition-colors hover:text-foreground/80 text-foreground/60 text-cyan-500 hover:text-cyan-400'>About</a>
+                <a href="#projects" className='transition-colors hover:text-foreground/80 text-foreground/60 text-cyan-500 hover:text-cyan-400'>Projects</a>
+                <a href="#testimonials" className='transition-colors hover:text-foreground/80 text-foreground/60 text-cyan-500 hover:text-cyan-400'>Testimonials</a>
                 <a href="#contact">
                     <button
-                        className="px-3 py-1 cursor-pointer rounded-md bg-cyan-500 text-white flex items-center gap-1 shadow-[0_0_5px_#22d3ee,inset_0_0_2px_#e0f2fe,0_0_10px_#06b6d4,0_0_20px_#06b6d4] border-2 border-cyan-400 transition-all hover:bg-cyan-600"
+                        className="px-3 py-1 cursor-pointer rounded-md bg-cyan-500 text-white hover:text-cyan-500 flex items-center gap-1 shadow-[0_0_5px_#22d3ee,inset_0_0_2px_#e0f2fe,0_0_10px_#06b6d4,0_0_20px_#06b6d4] border-2 border-cyan-400 transition-all hover:bg-white"
                     >
                         Contact <FaChevronRight/>
                     </button>
@@ -38,10 +38,10 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className='md:hidden'>
             <div className='space-y-1 px-2 pb-3 pt-2'>
-                <a href="#about" className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900'>About</a>
-                <a href="#projects" className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900'>Project</a>
-                <a href="#testimonials" className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900'>Testimonials</a>
-                <a href="#contact" className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900'>Contact</a>
+                <a href="#about" className='block rounded-md px-3 py-2 text-base font-medium text-cyan-500 hover:bg-cyan-500 hover:text-cyan-700'>About</a>
+                <a href="#projects" className='block rounded-md px-3 py-2 text-base font-medium text-cyan-500 hover:bg-cyan-500 hover:text-cyan-700'>Project</a>
+                <a href="#testimonials" className='block rounded-md px-3 py-2 text-base font-medium text-cyan-500 hover:bg-cyan-500 hover:text-cyan-700'>Testimonials</a>
+                <a href="#contact" className='block rounded-md px-3 py-2 text-base font-medium text-cyan-500 hover:bg-cyan-500 hover:text-cyan-700'>Contact</a>
             </div>
         </div>
       )}

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaFacebook, FaInstagramSquare, FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import reactLogo from '../assets/React.png';
 import reduxLogo from '../assets/Redux.png';
 import tailwindLogo from '../assets/Tailwind Css.png';
@@ -27,13 +26,6 @@ const Hero = () => {
         })
     };
 
-    const socialLinks = [
-        { Icon: FaFacebook, color: 'text-blue-600' },
-        { Icon: FaInstagramSquare, color: 'text-pink-600' },
-        { Icon: FaTwitterSquare, color: 'text-blue-400' },
-        { Icon: FaLinkedin, color: 'text-blue-900' },
-        { Icon: FaGithub, color: 'text-gray-600' }
-    ];
 
     return (
         <section className='relative'>
@@ -42,10 +34,10 @@ const Hero = () => {
                     {/* Left Content */}
                     <div className='md:w-1/2 mb-8 md:mb-0 flex flex-col px-6 lg:px-0'>
                         <motion.div className="space-y-1 md:space-y-4">
-                            <h1 className='text-2xl lg:text-7xl font-bold leading-snug'>
+                            <h1 className='text-2xl lg:text-7xl font-bold leading-snug text-white'>
                                 Hi Everyone, <br/>
                             </h1>
-                            <h1 className='text-3xl lg:text-7xl font-bold text-red-500 leading-snug'>
+                            <h1 className='text-3xl lg:text-7xl font-bold text-cyan-500 leading-snug'>
                                 {"I'm Tuan Anh Jr".split('').map((char, i) => (
                                     <motion.span key={i} variants={textVariants} initial='hidden' animate='visible'
                                                  custom={i}>
@@ -53,11 +45,11 @@ const Hero = () => {
                                     </motion.span>
                                 ))}
                             </h1>
-                            <motion.p className='text-2xl md:text-3xl' initial={{opacity: 0}} animate={{opacity: 1}}
+                            <motion.p className='text-2xl md:text-3xl text-white' initial={{opacity: 0}} animate={{opacity: 1}}
                                       transition={{delay: 0.5}}>
                                 Web Developer & Designer
                             </motion.p>
-                            <motion.p initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 1}}>
+                            <motion.p className={'text-white'} initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 1}}>
                                 Passionate about modern web technologies, I specialize in React and crafting engaging
                                 digital experiences.
                             </motion.p>

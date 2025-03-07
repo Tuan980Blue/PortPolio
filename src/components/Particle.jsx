@@ -18,9 +18,9 @@ export default function Particle() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setBgColor("#ffffff"); // Khi màn hình nhỏ hơn hoặc bằng md, đổi nền thành trắng
+        setBgColor("#000033");
       } else {
-        setBgColor("#e0f7fa"); // Màn hình lớn hơn md thì giữ màu nền tươi mát
+        setBgColor("#000033");
       }
     };
 
