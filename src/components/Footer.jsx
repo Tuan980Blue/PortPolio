@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import {FloatingDockFollow} from "../Tests/FloatingDock/FloatingDockFollow.jsx";
+import {FloatingDockFollow} from "../customs/FloatingFollow/FloatingDockFollow.jsx";
 
 const Footer = () => {
     return (
@@ -55,13 +55,13 @@ const Footer = () => {
                 </div>
 
                 <div className="mt-6 text-center">
-                    <h3 className="text-xl font-bold mb-4">Follow Me</h3>
-                    <div className="flex justify-center space-x-6">
+                    <h3 className="text-xl font-bold mb-2">Follow Me</h3>
+                    <div className="flex justify-center">
                         <FloatingDockFollow/>
                     </div>
                 </div>
 
-                <div className="mt-6 text-center">
+                <div className="text-center">
                     <p className="text-gray-600 text-sm">
                         Bản quyền © 2024-2035 tuananhhuflit.edu.id.vn. Hệ thống trực tuyến bảo vệ người dùng hàng đầu
                         Việt Nam.

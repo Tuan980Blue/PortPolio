@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { FloatingDock } from "./floating-dock.jsx";
+import {FloatingDockCustom} from "./floating-dock.jsx";
 
 export function FloatingDockFollow() {
     const links = [
@@ -33,8 +33,7 @@ export function FloatingDockFollow() {
 
     return (
         <div className="flex items-center justify-center">
-            <FloatingDock
-                mobileClassName=""
+            <FloatingDockCustom
                 items={links}
             />
         </div>
