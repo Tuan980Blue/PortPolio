@@ -8,7 +8,7 @@ import {
     useTransform,
 } from "motion/react";
 import { useRef } from "react";
-import {cn} from "../../Tests/lib-ts/utils.ts";
+import { cn } from "../../Tests/lib-ts/utils.ts";
 
 export function Button({
                            borderRadius = "1.6rem",
@@ -21,7 +21,7 @@ export function Button({
                            ...otherProps
                        }) {
     return (
-        (<Component
+        <Component
             className={cn(
                 "bg-transparent relative h-12 w-44 p-[2px] overflow-hidden hover:bg-cyan-200",
                 containerClassName
@@ -51,7 +51,7 @@ export function Button({
                 }}>
                 {children}
             </div>
-        </Component>)
+        </Component>
     );
 }
 
@@ -95,8 +95,28 @@ export const MovingBorder = ({
                 left: 0,
                 display: "inline-block",
                 transform,
+                boxShadow: "0 0 15px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.5)", // Tạo hiệu ứng glow
+                animation: "glowAnimation 1.5s infinite alternate", // Thêm animation cho viền glow
             }}>
             {children}
         </motion.div>
     </>);
 };
+
+// Thêm CSS animation vào `@keyframes` cho hiệu ứng glow:
+const style = `
+@keyframes glowAnimation {
+    0% {
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(0, 255, 255, 1), 0 0 60px rgba(0, 255, 255, 0.8);
+    }
+}
+`;
+
+const head = document.head || document.getElementsByTagName('head')[0];
+const styleTag = document.createElement("style");
+styleTag.type = "text/css";
+styleTag.innerHTML = style;
+head.appendChild(styleTag);
