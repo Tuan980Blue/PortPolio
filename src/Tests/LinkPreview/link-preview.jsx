@@ -4,7 +4,7 @@ import { encode } from "qss";
 import { AnimatePresence, motion, useMotionValue, useSpring } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Img } from 'react-image';
-import {cn} from "../utils.js";
+import {cn} from "../lib-js/utils.js";
 
 const LinkPreview = ({
                          children,

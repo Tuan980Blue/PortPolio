@@ -7,7 +7,7 @@
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
-import {cn} from "../lib/utils.ts";
+import {cn} from "../lib-ts/utils.ts";
 
 export const FloatingDock = ({
                                  items,

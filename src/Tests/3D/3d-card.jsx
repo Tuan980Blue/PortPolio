@@ -6,7 +6,7 @@ import React, {
     useRef,
     useEffect,
 } from "react";
-import {cn} from "../lib/utils.ts";
+import {cn} from "../lib-ts/utils.ts";
 
 const MouseEnterContext = createContext(undefined);
 
