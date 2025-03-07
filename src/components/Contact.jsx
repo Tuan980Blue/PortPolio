@@ -2,6 +2,7 @@ import React from 'react'
 import Lottie from 'lottie-react'
 import contact from '../assets/Contact.json'
 import {FaFacebook, FaInstagramSquare, FaLinkedin} from "react-icons/fa";
+import {Button} from "../customs/MovingBorder/moving-border.jsx";
 
 const Contact = () => {
     return (
@@ -28,37 +29,42 @@ const Contact = () => {
                         </div>
                         <Lottie animationData={contact} className='w-[350px] mx-auto lg:w-[500px]'/>
                     </div>
-                  <form
-                      className='w-full md:w-1/2 bg-gray-100 rounded-lg border border-cyan-300 shadow-lg shadow-cyan-500 p-10'>
-                    <h1 className='text-gray-900 text-4xl font-bold mb-7'>Contact Me</h1>
-                    <div className='mb-4'>
-                      <label htmlFor="name" className='block text-sm font-medium text-gray-700'>Your Name</label>
-                      <input type="text" id='name' placeholder='Full Name'
-                             className='mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50'/>
-                    </div>
-                    <div className='mb-4'>
-                      <label htmlFor="email" className='block text-sm font-medium text-gray-700'>Your Email</label>
-                      <input type="email" id='email' placeholder='Email'
-                             className='mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50'/>
-                    </div>
-                    <div className='mb-4'>
-                      <label htmlFor="message" className='block text-sm font-medium text-gray-700'>Message Content</label>
-                      <textarea id='message' placeholder='Enter Your Message'
-                                className='mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50'/>
-                    </div>
-                    <button
-                        className='bg-cyan-500 text-white px-3 py-2 rounded-lg hover:bg-cyan-600'
-                        onClick={(e) => {
-                          e.preventDefault();
-                          const name = document.getElementById('name').value;
-                          const email = document.getElementById('email').value;
-                          const message = document.getElementById('message').value;
-                          window.location.href = `mailto:tuanmeo980provip@gmail.com?subject=New Message from ${name}&body=${message} (Email: ${email})`;
-                        }}
-                    >
-                      Send Message
-                    </button>
-                  </form>
+                    <form
+                        className='w-full md:w-1/2 bg-gray-100 rounded-lg border border-cyan-300 shadow-lg shadow-cyan-500 p-10'>
+                        <h1 className='text-gray-900 text-4xl font-bold mb-7'>Contact Me</h1>
+                        <div className='mb-4'>
+                            <label htmlFor="name" className='block text-sm font-medium text-gray-700'>Your Name</label>
+                            <input type="text" id='name' placeholder='Full Name'
+                                   className='mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50'/>
+                        </div>
+                        <div className='mb-4'>
+                            <label htmlFor="email" className='block text-sm font-medium text-gray-700'>Your
+                                Email</label>
+                            <input type="email" id='email' placeholder='Email'
+                                   className='mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50'/>
+                        </div>
+                        <div className='mb-4'>
+                            <label htmlFor="message" className='block text-sm font-medium text-gray-700'>Message
+                                Content</label>
+                            <textarea id='message' placeholder='Enter Your Message'
+                                      className='mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50'/>
+                        </div>
+                        <Button
+                            borderRadius="1.75rem"
+                            className="bg-white hover:bg-cyan-400 text-cyan-500 hover:text-white  dark:bg-slate-900 border-neutral-200 dark:border-slate-800"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                const name = document.getElementById('name').value;
+                                const email = document.getElementById('email').value;
+                                const message = document.getElementById('message').value;
+                                window.location.href = `mailto:tuanmeo980provip@gmail.com?subject=New Message from ${name}&body=${message} (Email: ${email})`;
+                            }}
+                        >
+                            <div className={" font-medium text-lg"}>
+                                Send Message
+                            </div>
+                        </Button>
+                    </form>
                 </div>
             </div>
         </section>

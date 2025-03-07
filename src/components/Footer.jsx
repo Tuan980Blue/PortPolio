@@ -54,9 +54,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="mt-6 text-center">
+                <div className="mt-2 md:mt-4 text-center">
                     <h3 className="text-xl font-bold mb-2">Follow Me</h3>
-                    <div className="flex justify-center">
+                    <div className="flex md:mt-4 mt-2 justify-center">
                         <FloatingDockFollow/>
                     </div>
                 </div>
