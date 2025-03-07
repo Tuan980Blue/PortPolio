@@ -19,6 +19,7 @@ import TuanBienHinh from '../assets/TuanBienHinh.gif'
 import { FaUniversity } from "react-icons/fa";
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
+import LinkPreview from "../Tests/LinkPreview/link-preview.jsx";
 
 const About = () => {
     const controls = useAnimation();
@@ -187,13 +188,20 @@ const About = () => {
                                 <FaUniversity className="text-blue-500"/> Học Vấn
                             </h2>
                             <div className="flex items-start gap-8 mt-6">
-                                <img
-                                    src={LogoHuflit}
-                                    alt="University Logo"
-                                    className="w-28 object-cover"
-                                />
+                                <LinkPreview url={"https://huflit.edu.vn/"} >
+                                    <img
+                                        src={LogoHuflit}
+                                        alt="University Logo"
+                                        className="w-28 object-cover"
+                                    />
+                                </LinkPreview>
                                 <div className={"flex flex-col"}>
-                                    <p className="text-xl md:text-2xl font-semibold text-gray-800 mb-1">Trường Đại học Ngoại Ngữ và Tin Học TP.HCM</p>
+                                    <div>
+                                        <LinkPreview url={"https://huflit.edu.vn/"}
+                                                     className={"text-xl md:text-2xl font-semibold text-gray-800 mb-1"}>
+                                            Trường Đại học Ngoại Ngữ và Tin Học TP.HCM
+                                        </LinkPreview>
+                                    </div>
                                     <p className="text-sm md:text-lg text-gray-600">Công nghệ thông tin (2021 - 2025)</p>
                                     <p className="text-sm md:text-lg text-gray-600">Chuyên ngành: Công nghệ phần mềm</p>
                                     <p className="text-sm md:text-lg text-gray-800 font-bold">GPA: 3.2/4</p>
