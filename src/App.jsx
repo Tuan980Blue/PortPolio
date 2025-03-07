@@ -13,6 +13,7 @@ import {ThreeDCards} from "./Tests/3D/ThreeDCards.jsx";
 import {
     BackgroundBeamsWithCollisionDemo
 } from "./Tests/BackgroundBeamsWithCollision/BackgroundBeamsWithCollisionDemo.jsx";
+import {FloatingDockDemo} from "./Tests/FloatingDock/FloatingDockDemo.jsx";
 
 const App = () => {
     return (
@@ -29,6 +30,7 @@ const App = () => {
             <Footer/>
             <ThreeDCards/>
             <BackgroundBeamsWithCollisionDemo/>
+            <FloatingDockDemo/>
         </>
     )
 }
