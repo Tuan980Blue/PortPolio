@@ -8,11 +8,10 @@ import Projects from './components/Projects';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import SliderSlogan from './customs/SliderSlogan';
+import SliderRunNavBar from './customs/SliderRunNavBar.jsx';
 import { ThreeDCards } from './Tests/3D/ThreeDCards';
 import { BackgroundBeamsWithCollisionDemo } from './Tests/BackgroundBeamsWithCollision/BackgroundBeamsWithCollisionDemo';
 import { FloatingDockDemo } from './Tests/FloatingDock/FloatingDockDemo';
-import { LinkPreviewDemo } from './Tests/LinkPreview/LinkPreviewDemo';
 
 const App = () => {
     return (
@@ -20,7 +19,7 @@ const App = () => {
             <>
                 <ParticleBackground />
                 <Navbar />
-                <SliderSlogan />
+                <SliderRunNavBar />
                 <Hero />
                 <About />
                 <Projects />
@@ -30,7 +29,6 @@ const App = () => {
                 <ThreeDCards />
                 <BackgroundBeamsWithCollisionDemo />
                 <FloatingDockDemo />
-                <LinkPreviewDemo />
             </>
         </Router>
     );

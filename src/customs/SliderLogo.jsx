@@ -43,9 +43,9 @@ const SliderLogo = () => {
                 {duplicatedLogos.map((logo, index) => (
                     <SwiperSlide key={index} className="!w-auto">
                         {logo.src ? (
-                            <img className="h-8 w-auto" src={logo.src} alt={logo.alt} />
+                            <img className="h-8 w-auto bg-white rounded-lg" src={logo.src} alt={logo.alt} />
                         ) : logo.icon ? (
-                            <logo.icon className="h-8 w-8 text-black" />
+                            <logo.icon className="h-8 w-8 text-white" />
                         ) : null}
                     </SwiperSlide>
                 ))}

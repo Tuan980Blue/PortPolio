@@ -1,10 +1,10 @@
 import React from "react";
-import {FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
+import {FloatingDockFollow} from "../Tests/FloatingDock/FloatingDockFollow.jsx";
 
 const Footer = () => {
     return (
-        <footer className="py-10 text-cyan-600 relative">
+        <footer className="py-10 text-cyan-600 relative bg-white">
             <div className="container max-w-full px-6">
                 <div className="flex flex-wrap justify-between items-start mb-8">
                     <div className="w-full md:w-1/2 lg:w-1/4 p-4">
@@ -57,18 +57,7 @@ const Footer = () => {
                 <div className="mt-6 text-center">
                     <h3 className="text-xl font-bold mb-4">Follow Me</h3>
                     <div className="flex justify-center space-x-6">
-                        {[
-                            {icon: <FaGithub size={24}/>, link: "#"},
-                            {icon: <FaTwitter size={24}/>, link: "#"},
-                            {icon: <FaLinkedin size={24}/>, link: "#"},
-                            {icon: <FaInstagram size={24}/>, link: "#"},
-                            {icon: <FaFacebook size={24}/>, link: "#"},
-                        ].map((social) => (
-                            <a key={social.link} href={social.link}
-                               className="text-gray-600 hover:text-cyan-500 transition duration-300">
-                                {social.icon}
-                            </a>
-                        ))}
+                        <FloatingDockFollow/>
                     </div>
                 </div>
 

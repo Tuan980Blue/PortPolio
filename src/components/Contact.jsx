@@ -5,7 +5,7 @@ import {FaFacebook, FaInstagramSquare, FaLinkedin} from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <section id='contact' className='z-50 bg-gray-800 relative py-10 px-5 md:px-0'>
+        <section id='contact' className='z-50 relative py-10 px-5 md:px-0'>
             <div className='mb-16 max-w-7xl mx-auto'>
                 <div className='flex flex-col md:flex-row justify-between items-center'>
                     <div className='md:w-1/2 mb-8 ml-2 md:mb-0'>
