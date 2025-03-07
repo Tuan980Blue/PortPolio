@@ -9,6 +9,10 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import CustomCursor from "./customs/CustomCursor.jsx";
 import SliderSlogan from "./customs/SliderSlogan.jsx";
+import {ThreeDCards} from "./Tests/3D/ThreeDCards.jsx";
+import {
+    BackgroundBeamsWithCollisionDemo
+} from "./Tests/BackgroundBeamsWithCollision/BackgroundBeamsWithCollisionDemo.jsx";
 
 const App = () => {
     return (
@@ -23,6 +27,8 @@ const App = () => {
             <Testimonials/>
             <Contact/>
             <Footer/>
+            <ThreeDCards/>
+            <BackgroundBeamsWithCollisionDemo/>
         </>
     )
 }
