@@ -50,6 +50,7 @@ export default function Particle() {
                         enable: true,
                         mode: "push",
                       },
+                      // Khi di chuột vào, hạt sẽ bị đẩy ra.
                       onHover: {
                         enable: true,
                         mode: "repulse",
@@ -61,8 +62,8 @@ export default function Particle() {
                         quantity: 4,
                       },
                       repulse: {
-                        distance: 200,
-                        duration: 0.4,
+                        distance: 150,
+                        duration: 0.3,
                       },
                     },
                   },
