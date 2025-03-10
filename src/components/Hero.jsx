@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import reactLogo from '../assets/React.png';
-import reduxLogo from '../assets/Redux.png';
+import githubLogo from '../assets/Github.png';
 import tailwindLogo from '../assets/Tailwind Css.png';
 import tuanGif from '../../public/Tuan.gif';
 import tuanStatic from '../../public/Tuan3.png';
@@ -57,7 +57,7 @@ const Hero = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 1.8 }}
-                                className="mt-4 w-96 overflow-hidden">
+                                className="mt-4 w-96 overflow-hidden py-4">
                                 <div >
                                     <SliderLogo/>
                                 </div>
@@ -89,7 +89,7 @@ const Hero = () => {
                         />
                         <img src={reactLogo} alt='React'
                              className='absolute w-10 top-36 left-0 rounded-full md:hidden'/>
-                        <img src={reduxLogo} alt='Redux' className='absolute w-10 top-0 right-5 md:hidden'/>
+                        <img src={githubLogo} alt='GitHub' className='absolute w-10 top-0 right-5 md:hidden'/>
                         <img src={tailwindLogo} alt='Tailwind'
                              className='absolute w-10 rounded-full right-0 bottom-36 md:hidden'/>
                     </div>
