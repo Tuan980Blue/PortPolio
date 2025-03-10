@@ -1,14 +1,16 @@
 import React from "react";
 import {BackgroundBeamsWithCollision} from "./BackgroundBeamsWithCollision.jsx";
 import {AnimatedTestimonialsDemo} from "../Animated/AnimatedTestimonialsDemo.jsx";
-import LinkPreviewDemo from "../LinkPreview/LinkPreviewDemo.jsx";
+import {ThreeDCards} from "../3D/ThreeDCards.jsx";
+import {FloatingDockDemo} from "../FloatingDock/FloatingDockDemo.jsx";
 
 export function BackgroundBeamsWithCollisionDemo() {
     return (
         (<BackgroundBeamsWithCollision>
-            <div>
+            <div className={"bg-white"}>
                 <AnimatedTestimonialsDemo/>
-                <LinkPreviewDemo/>
+                <ThreeDCards />
+                <FloatingDockDemo />
             </div>
         </BackgroundBeamsWithCollision>)
     );

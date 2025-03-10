@@ -6,7 +6,6 @@ import {BackgroundBeamsWithCollision} from "../Tests/BackgroundBeamsWithCollisio
 const Footer = () => {
     return (
         <footer className="py-10 text-cyan-600 relative bg-white">
-            <BackgroundBeamsWithCollision>
                 <div className="container max-w-full px-6">
                     <div className="flex flex-wrap justify-between items-start mb-8">
                         <div className="w-full md:w-1/2 lg:w-1/4 p-4">
@@ -72,7 +71,6 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-            </BackgroundBeamsWithCollision>
         </footer>
     );
 };
