@@ -82,22 +82,33 @@ const Hero = () => {
                         <motion.img
                             src={currentImage}
                             alt='Tuan'
-                            className='lg:h-[90vh] h-80 transition-opacity duration-1000 ease-in-out'
+                            className='w-full h-auto max-h-[90vh] object-contain transition-opacity duration-1000 ease-in-out'
                             initial={{opacity: 0}}
                             animate={{opacity: 1}}
                             transition={{duration: 1.5}}
                         />
-                        <img src={reactLogo} alt='React'
-                             className='absolute w-10 top-36 left-0 rounded-full md:hidden'/>
-                        <img src={githubLogo} alt='GitHub' className='absolute w-10 top-0 right-5 md:hidden'/>
-                        <img src={tailwindLogo} alt='Tailwind'
-                             className='absolute w-10 rounded-full right-0 bottom-36 md:hidden'/>
+                        <img
+                            src={reactLogo}
+                            alt='React'
+                            className='absolute w-10 top-36 left-0 rounded-full md:hidden'
+                        />
+                        <img
+                            src={githubLogo}
+                            alt='GitHub'
+                            className='absolute w-10 top-0 right-5 md:hidden'
+                        />
+                        <img
+                            src={tailwindLogo}
+                            alt='Tailwind'
+                            className='absolute w-10 rounded-full right-0 bottom-36 md:hidden'
+                        />
                     </div>
+
                 </div>
 
                 {/* Social Links */}
                 <motion.div
-                    className='absolute top-40 right-1 hidden lg:flex'
+                    className='absolute top-40 right-1 hidden xl:flex'
                     initial={{opacity: 0, x: 50}}
                     animate={{opacity: 1, x: 0}}
                     transition={{duration: 1.5, delay: 3}}
