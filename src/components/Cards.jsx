@@ -4,14 +4,21 @@ import LinkPreview from "../Tests/LinkPreview/link-preview.jsx";
 
 const Cards = ({item}) => {
     return (
-        <div className='border border-cyan-500 rounded-lg w-[350px] lg:w-[400px] bg-cyan-50'>
-            <img src={item.image} alt="" className='rounded-lg lg:h-56 h-44 w-full items-center justify-center'/>
-            <div className='p-4'>
+        <div className='border border-cyan-500 rounded-lg w-[350px] lg:w-[400px] bg-cyan-50 flex flex-col h-full'>
+            <div className="w-full h-44 lg:h-56">
+                <img
+                    src={item.image}
+                    alt=""
+                    className="w-full h-full object-cover rounded-t-lg"
+                />
+            </div>
+            <div className="p-4 flex flex-col flex-grow">
                 <h1 className='font-semibold text-xl mb-2'>{item.title}</h1>
                 <p>{item.desc}</p>
                 <div className='flex gap-3 mt-4'>
                     <button className='bg-cyan-500 text-white px-3 py-2 rounded-md'>
-                        <LinkPreview url={item.live} target='_blank' className='bg-cyan-500 text-white px-3 py-2 rounded-md'>
+                        <LinkPreview url={item.live} target='_blank'
+                                     className='bg-cyan-500 text-white px-3 py-2 rounded-md'>
                             Live Preview
                         </LinkPreview>
                     </button>

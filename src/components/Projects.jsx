@@ -74,7 +74,7 @@ const Projects = () => {
                     My Project
                     <img src={Coder} alt="Coder Icon" className="h-20 md:h-28 w-auto ml-2"/>
                 </h2>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-10'>
+                <div className='grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center gap-10'>
                     {displayedProjects.map((items) => {
                         return <Cards item={items}/>
                     })}
