@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -12,13 +12,16 @@ import SliderRunNavBar from './customs/SliderRunNavBar.jsx';
 import { BackgroundBeamsWithCollisionDemo } from './Tests/BackgroundBeamsWithCollision/BackgroundBeamsWithCollisionDemo';
 
 const App = () => {
+    const [darkMode, setDarkMode] = useState(false);
+
+    const toggleDarkMode = () => setDarkMode(!darkMode);
     return (
         <Router>
             <>
-                <ParticleBackground />
-                <Navbar />
+                <ParticleBackground darkMode={darkMode}/>
+                <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
                 <SliderRunNavBar />
-                <Hero />
+                <Hero darkMode={darkMode}/>
                 <About />
                 <Projects />
                 <Testimonials />

@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import Logo from '../assets/Logo.png'
 import { Menu, X } from 'lucide-react'
 import {FaChevronRight} from "react-icons/fa";
+import ButtonDark from "../customs/Button/ButtonDark.jsx";
 
-const Navbar = () => {
+const Navbar = ({ darkMode, toggleDarkMode }) => {
     const [mobileMenuOpen, setmMobileMenuOpen] = useState(false)
   return (
     <header className='sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4 lg:px-0'>
@@ -23,6 +24,7 @@ const Navbar = () => {
                         Contact <FaChevronRight/>
                     </button>
                 </a>
+                <ButtonDark darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             </nav>
         </div>
           <button className='inline-flex items-center justify-center rounded-md md:hidden'
@@ -38,10 +40,17 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className='md:hidden'>
             <div className='space-y-1 px-2 pb-3 pt-2'>
-                <a href="#about" className='block rounded-md px-3 py-2 text-base font-medium text-cyan-500 hover:bg-cyan-500 hover:text-cyan-700'>About</a>
-                <a href="#projects" className='block rounded-md px-3 py-2 text-base font-medium text-cyan-500 hover:bg-cyan-500 hover:text-cyan-700'>Project</a>
-                <a href="#testimonials" className='block rounded-md px-3 py-2 text-base font-medium text-cyan-500 hover:bg-cyan-500 hover:text-cyan-700'>Testimonials</a>
-                <a href="#contact" className='block rounded-md px-3 py-2 text-base font-medium text-cyan-500 hover:bg-cyan-500 hover:text-cyan-700'>Contact</a>
+                <a href="#about"
+                   className='block rounded-md px-3 py-2 text-base font-medium text-cyan-500 hover:bg-cyan-500 hover:text-cyan-700'>About</a>
+                <a href="#projects"
+                   className='block rounded-md px-3 py-2 text-base font-medium text-cyan-500 hover:bg-cyan-500 hover:text-cyan-700'>Project</a>
+                <a href="#testimonials"
+                   className='block rounded-md px-3 py-2 text-base font-medium text-cyan-500 hover:bg-cyan-500 hover:text-cyan-700'>Testimonials</a>
+                <a href="#contact"
+                   className='block rounded-md px-3 py-2 text-base font-medium text-cyan-500 hover:bg-cyan-500 hover:text-cyan-700'>Contact</a>
+                <div className="mt-3">
+                    <ButtonDark darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+                </div>
             </div>
         </div>
       )}

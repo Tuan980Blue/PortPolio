@@ -1,10 +1,10 @@
-import { useCallback, useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 
-export default function Particle() {
+export default function Particle({darkMode}) {
   const [init, setInit] = useState(false);
-  const [bgColor, setBgColor] = useState("#e0f7fa"); // Màu nền mặc định
+  const [bgColor, setBgColor] = useState(darkMode ? "#000033" : "#e0f7fa");
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -14,21 +14,10 @@ export default function Particle() {
     });
   }, []);
 
-  // Lắng nghe kích thước màn hình để thay đổi màu nền
+  // Khi darkMode thay đổi, cập nhật màu nền
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        setBgColor("#000033");
-      } else {
-        setBgColor("#000033");
-      }
-    };
-
-    handleResize(); // Gọi ngay khi component mount
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    setBgColor(darkMode ? "#000033" : "#e0f7fa");
+  }, [darkMode]);
 
 
   return (

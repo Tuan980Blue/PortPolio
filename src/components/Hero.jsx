@@ -9,7 +9,7 @@ import SliderLogo from "../customs/SliderLogo.jsx";
 import CircularLogoSlider from "../customs/CircularLogoSlider.jsx";
 import { MdOutlineFileDownload } from "react-icons/md";
 
-const Hero = () => {
+const Hero = ({ darkMode }) => {
     const [currentImage, setCurrentImage] = useState(tuanGif);
 
     useEffect(() => {
@@ -34,7 +34,7 @@ const Hero = () => {
                     {/* Left Content */}
                     <div className='md:w-1/2 mb-8 md:mb-0 flex flex-col px-6 lg:px-0'>
                         <motion.div className="space-y-1 md:space-y-4">
-                            <h1 className='text-2xl lg:text-7xl font-bold leading-snug text-white'>
+                            <h1 className={`text-2xl lg:text-7xl font-bold leading-snug ${darkMode ? "text-white" : "text-black"}`}>
                                 Hi Everyone, <br/>
                             </h1>
                             <h1 className='text-3xl lg:text-7xl font-bold text-cyan-500 leading-snug'>
@@ -45,20 +45,25 @@ const Hero = () => {
                                     </motion.span>
                                 ))}
                             </h1>
-                            <motion.p className='text-2xl md:text-3xl text-white' initial={{opacity: 0}} animate={{opacity: 1}}
-                                      transition={{delay: 0.5}}>
+                            <motion.p
+                                className={`text-2xl md:text-3xl ${darkMode ? "text-white" : "text-black"}`}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 0.5 }}
+                            >
                                 Web Developer & Designer
                             </motion.p>
-                            <motion.p className={'text-white'} initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 1}}>
+                            <motion.p className={`${darkMode ? "text-white" : "text-black"}`} initial={{opacity: 0}} animate={{opacity: 1}}
+                                      transition={{delay: 1}}>
                                 Passionate about modern web technologies, I specialize in React and crafting engaging
                                 digital experiences.
                             </motion.p>
                             <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 1.8 }}
+                                initial={{opacity: 0, y: 20}}
+                                animate={{opacity: 1, y: 0}}
+                                transition={{duration: 0.5, delay: 1.8}}
                                 className="mt-4 w-96 overflow-hidden py-4">
-                                <div >
+                                <div>
                                     <SliderLogo/>
                                 </div>
                             </motion.div>
@@ -66,7 +71,9 @@ const Hero = () => {
                                 href="https://drive.google.com/file/d/1W7qxq70dsjR6olSmXPk4zVWCq-t-awcW/view?usp=drive_link"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 bg-cyan-400 text-white px-4 py-2 rounded-lg font-semibold hover:bg-cyan-500 transition-all"
+                                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold transition-all ${
+                                    darkMode ? "bg-cyan-400 text-white hover:bg-cyan-500" : "bg-white text-black hover:bg-gray-300"
+                                }`}
                                 initial={{scale: 0}}
                                 animate={{scale: 1}}
                                 transition={{duration: 0.5, delay: 1.5}}
@@ -74,6 +81,7 @@ const Hero = () => {
                                 <MdOutlineFileDownload className="w-5 h-5"/>
                                 <span>Download CV</span>
                             </motion.a>
+
                         </motion.div>
                     </div>
 
