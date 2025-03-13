@@ -24,14 +24,14 @@ const Projects = () => {
             desc: 'Trò chơi hải chiến cổ điển, nơi người chơi có thể đấu trí với máy hoặc bạn bè.',
             image: Project02,
             live: "https://profiletuanhanhhuflit.vercel.app/",
-            github: "https://github.com/Tuan980Blue/PortPolio"
+            github: "https://github.com/htilssu/BattleShip"
         },
         {
             title: 'Shoppe Clone',
             desc: 'Bản sao của Shopee với các tính năng cơ bản như tìm kiếm, đặt hàng, và thanh toán.',
             image: Project03,
             live: "https://profiletuanhanhhuflit.vercel.app/",
-            github: "https://github.com/Tuan980Blue/PortPolio"
+            github: "https://github.com/htilssu/ShoppingWEB"
         },
         {
             title: 'E-Wallet',
@@ -52,7 +52,7 @@ const Projects = () => {
             desc: 'Website quản lý trung tâm thể thao, cung cấp thông tin về các lớp học và huấn luyện viên.',
             image: Project06,
             live: "https://profiletuanhanhhuflit.vercel.app/",
-            github: "https://github.com/Tuan980Blue/PortPolio"
+            github: "https://github.com/htilssu/TrungTamTheDucTheThao"
         }
         ,
         {
@@ -60,7 +60,7 @@ const Projects = () => {
             desc: 'Website quản lý trung tâm thể thao, cung cấp thông tin về các lớp học và huấn luyện viên.',
             image: Project06,
             live: "https://profiletuanhanhhuflit.vercel.app/",
-            github: "https://github.com/Tuan980Blue/PortPolio"
+            github: "https://github.com/htilssu/TrungTamTheDucTheThao"
         }
     ];
 
