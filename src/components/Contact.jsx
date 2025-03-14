@@ -4,14 +4,15 @@ import contact from '../assets/Contact.json'
 import {FaFacebook, FaInstagramSquare, FaLinkedin} from "react-icons/fa";
 import {Button} from "../customs/MovingBorder/moving-border.jsx";
 
-const Contact = () => {
+const Contact = ({darkMode}) => {
     return (
-        <section id='contact' className='z-50 relative py-10 px-5 md:px-0'>
+        <section id='contact' className={`z-50 relative py-10 px-5 md:px-0 ${darkMode ? '' : 'bg-gray-900'}`}>
                 <div className='mb-16 max-w-7xl mx-auto'>
                     <div className='flex flex-col md:flex-row justify-between items-center'>
                         <div className='md:w-1/2 mb-8 ml-2 md:mb-0'>
                             <h2 className='text-3xl font-bold mb-3 text-cyan-500'>Get in Touch</h2>
-                            <p className='mb-4 text-white/85'>I'm always open to new opportunities and collaboration.
+                            <p className={`mb-4 ${darkMode ? 'text-white/85' : 'text-white'}`}>I'm always open to new
+                                opportunities and collaboration.
                                 Feel
                                 free to reach out!</p>
                             <div className='flex space-x-4'>

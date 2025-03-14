@@ -12,7 +12,7 @@ import SliderRunNavBar from './customs/SliderRunNavBar.jsx';
 import { BackgroundBeamsWithCollisionDemo } from './Tests/BackgroundBeamsWithCollision/BackgroundBeamsWithCollisionDemo';
 
 const App = () => {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
 
     const toggleDarkMode = () => setDarkMode(!darkMode);
     return (
@@ -25,7 +25,7 @@ const App = () => {
                 <About />
                 <Projects />
                 <Testimonials />
-                <Contact />
+                <Contact darkMode={darkMode}/>
                 <Footer />
                 <BackgroundBeamsWithCollisionDemo />
             </>
