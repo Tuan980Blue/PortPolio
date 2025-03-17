@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SliderRunNavBar from './customs/SliderRunNavBar.jsx';
 import { BackgroundBeamsWithCollisionDemo } from './Tests/BackgroundBeamsWithCollision/BackgroundBeamsWithCollisionDemo';
-import {AnimatedTestimonialsDemo} from "./Tests/Animated/AnimatedTestimonialsDemo.jsx";
+import {MoreAboutMe} from "./Tests/Animated/MoreAboutMe.jsx";
 
 const App = () => {
     const [darkMode, setDarkMode] = useState(true);
@@ -26,7 +26,7 @@ const App = () => {
                 <Hero darkMode={darkMode}/>
                 <About />
                 <Projects />
-                <AnimatedTestimonialsDemo />
+                <MoreAboutMe />
                 <Contact darkMode={darkMode}/>
                 <Footer />
                 <BackgroundBeamsWithCollisionDemo />
