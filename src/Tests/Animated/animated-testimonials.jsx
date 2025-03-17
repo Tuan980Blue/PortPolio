@@ -32,7 +32,7 @@ export const AnimatedTestimonials = ({
         return Math.floor(Math.random() * 21) - 10;
     };
     return (
-        <div className={"relative bg-white"}>
+        <div className={"relative bg-white lg:h-[90vh]"}>
             <div className={"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10"}>
                 <h2 className='text-xl lg:text-3xl font-bold text-cyan-500 border-b border-cyan-500 w-max lg:pb-2 pb-0 flex items-center'>
                     More About Me
@@ -108,7 +108,7 @@ export const AnimatedTestimonials = ({
                                     {testimonials[active].name}
                                 </h3>
                                 <p className="lg:text-sm text-xs text-gray-500 dark:text-neutral-500">
-                                    {testimonials[active].designation}
+                                    {testimonials[active].description}
                                 </p>
                                 <motion.p className="lg:text-lg text-sm text-gray-500 lg:mt-8 mt-5 dark:text-neutral-300">
                                     {testimonials[active].quote.split(" ").map((word, index) => (
