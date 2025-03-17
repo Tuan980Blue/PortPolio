@@ -69,13 +69,10 @@ const About = () => {
                                     <div className="flex flex-col items-center justify-center gap-8 ">
                                         <div
                                             className={"flex flex-col-1 sm:flex-col-2 md:gap-6 gap-4 items-center justify-center"}>
-                                            <motion.img
+                                            <img
                                                 src={currentSrc}
                                                 alt="Tuan Profile"
                                                 className="rounded-full border-4 border-cyan-500 w-40 lg:w-52 shadow-xl hover:scale-105 transition-transform duration-300"
-                                                initial={{opacity: 0, scale: 0.5}}
-                                                whileInView={{opacity: 1, scale: 1}}
-                                                transition={{duration: 1.2}}
                                             />
                                             <div className="text-center md:text-left">
                                                 <p className="text-2xl font-extrabold text-gray-900">Nguyen Anh Tuan</p>
