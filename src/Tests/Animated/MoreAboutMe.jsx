@@ -7,7 +7,7 @@ export function MoreAboutMe() {
             quote: "Bóng đá không chỉ là một môn thể thao, mà còn là cách mình kết nối với bạn bè và rèn luyện tinh thần đồng đội.",
             description:
                 "Mình là một người cực kỳ yêu thích bóng đá! Đây không chỉ là một môn thể thao mà còn là niềm đam mê lớn của mình. Mỗi tuần, mình đều dành thời gian để ra sân cùng bạn bè, rèn luyện sức khỏe và tận hưởng những khoảnh khắc tuyệt vời trên sân cỏ.",
-            src: "https://images.unsplash.com/photo-1601972599722-22d6bbd2f83b?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            src: "/src/assets/SoThichDaBong.png",
         },
         {
             name: "Yêu thích công nghệ",
@@ -28,7 +28,7 @@ export function MoreAboutMe() {
             quote: "Mỗi chuyến đi là một hành trình khám phá bản thân, văn hóa và những điều mới mẻ.",
             description:
                 "Mình thích khám phá những vùng đất mới, tìm hiểu về các nền văn hóa khác nhau và thưởng thức những món ăn đặc trưng của từng nơi. Mỗi chuyến đi là một trải nghiệm đáng nhớ!",
-            src: "https://images.unsplash.com/photo-1521337581100-5cf0c1c87d43?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            src: "/src/assets/DuLich.png",
         },
         {
             name: "Học tập và phát triển bản thân",
@@ -42,7 +42,7 @@ export function MoreAboutMe() {
             quote: "Giáo dục là chìa khóa mở ra tương lai, và mình luôn trân trọng hành trình học tập của bản thân.",
             description:
                 "Mình tốt nghiệp từ Đại học Ngoại Ngữ Và Tin Học TP HCM với GPA 3.2/4.0. Trong suốt những năm học, mình luôn yêu thích môi trường học tập năng động, nơi khuyến khích tư duy sáng tạo và hợp tác. Những năm đại học đã giúp mình phát triển không chỉ về kiến thức chuyên môn mà còn cả các kỹ năng mềm quan trọng như làm việc nhóm và quản lý thời gian.",
-            src: "https://images.unsplash.com/photo-1590402494682-3ca0b01961c2?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            src: "src/assets/HUFLIT-hoc-mon.png",
         }
     ];
     return <AnimatedTestimonials testimonials={testimonials} />;
