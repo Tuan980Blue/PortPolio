@@ -2,6 +2,7 @@
 import {IconArrowLeft, IconArrowRight} from "@tabler/icons-react";
 import {motion, AnimatePresence} from "framer-motion";
 import React, {useEffect, useState} from "react";
+import {BackgroundBeamsWithCollision} from "../BackgroundBeamsWithCollision/BackgroundBeamsWithCollision.jsx";
 
 export const AnimatedTestimonials = ({
                                          testimonials,
@@ -32,8 +33,9 @@ export const AnimatedTestimonials = ({
         return Math.floor(Math.random() * 21) - 10;
     };
     return (
-        <div className={"relative bg-white lg:h-[90vh]"}>
-            <div className={"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10"}>
+        <div className={"relative bg-white "}>
+            <BackgroundBeamsWithCollision>
+            <div className={"lg:h-[90vh] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10"}>
                 <h2 className='text-xl lg:text-3xl font-bold text-cyan-500 border-b border-cyan-500 w-max lg:pb-2 pb-0 flex items-center'>
                     More About Me
                 </h2>
@@ -153,6 +155,7 @@ export const AnimatedTestimonials = ({
                     </div>
                 </div>
             </div>
+            </BackgroundBeamsWithCollision>
         </div>
     );
 };
