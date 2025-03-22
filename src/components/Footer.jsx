@@ -1,7 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import {FloatingDockFollow} from "../customs/FloatingFollow/FloatingDockFollow.jsx";
-import {BackgroundBeamsWithCollision} from "../Tests/BackgroundBeamsWithCollision/BackgroundBeamsWithCollision.jsx";
 
 const Footer = () => {
     return (
