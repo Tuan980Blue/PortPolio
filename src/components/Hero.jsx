@@ -1,21 +1,13 @@
-import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import reactLogo from '../assets/React.png';
 import githubLogo from '../assets/Github.png';
 import tailwindLogo from '../assets/Tailwind Css.png';
-import tuanGif from '../../public/Tuan.gif';
-import tuanStatic from '../../public/Tuan3.png';
+import Tuan from '../../public/Tuan3.png';
 import SliderLogo from "../customs/SliderLogo.jsx";
 import CircularLogoSlider from "../customs/CircularLogoSlider.jsx";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 const Hero = ({ darkMode }) => {
-    const [currentImage, setCurrentImage] = useState(tuanGif);
-
-    useEffect(() => {
-        const timer = setTimeout(() => setCurrentImage(tuanStatic), 3400);
-        return () => clearTimeout(timer);
-    }, []);
 
     const textVariants = {
         hidden: { opacity: 0, y: 20 },
@@ -88,7 +80,7 @@ const Hero = ({ darkMode }) => {
                     {/* Right Image */}
                     <div className='md:w-1/2 flex justify-center relative'>
                         <motion.img
-                            src={currentImage}
+                            src={Tuan}
                             alt='Tuan'
                             className='w-full h-auto max-h-[90vh] object-contain transition-opacity duration-1000 ease-in-out'
                             initial={{opacity: 0}}
