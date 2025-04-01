@@ -1,4 +1,4 @@
-import { AnimatedTestimonials } from "./animated-testimonials.jsx";
+import { AnimatedTestimonials } from "../Tests/Animated/animated-testimonials.jsx";
 
 export function MoreAboutMe() {
     const testimonials = [
