@@ -6,7 +6,7 @@ import {Button} from "../customs/MovingBorder/moving-border.jsx";
 
 const Contact = ({darkMode}) => {
     return (
-        <section id='contact' className={`z-50 relative py-10 px-5 md:px-0 ${darkMode ? '' : 'bg-gray-900'}`}>
+        <section id='contact' className={`z-50 relative py-10 px-5 md:px-0 ${darkMode ? 'bg-gray-800' : 'bg-gray-900'}`}>
                 <div className='mb-16 max-w-7xl mx-auto'>
                     <div className='flex flex-col md:flex-row justify-between items-center'>
                         <div className='md:w-1/2 mb-8 ml-2 md:mb-0'>
@@ -54,7 +54,7 @@ const Contact = ({darkMode}) => {
                             </div>
                             <Button
                                 borderRadius="1.75rem"
-                                className="bg-white hover:bg-cyan-400 text-cyan-500 hover:text-white  dark:bg-slate-900 border-neutral-200 dark:border-slate-800"
+                                className="bg-cyan-100 hover:bg-cyan-200 text-cyan-500 dark:bg-slate-900 border-neutral-200 dark:border-slate-800"
                                 onClick={(e) => {
                                     e.preventDefault();
                                     const name = document.getElementById('name').value;
