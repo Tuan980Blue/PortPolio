@@ -1,7 +1,7 @@
 
 🚀 React + Vite Starter Project
 
-🌍 Live Preview: https://tuananhhuflit.id.vn
+🌍 Live Preview -> https://tuananhhuflit.id.vn
 
 
 
