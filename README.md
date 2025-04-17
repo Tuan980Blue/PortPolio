@@ -15,4 +15,4 @@ Dự án Profile cá nhân được xây dựng với React và Vite.
 
 🤝 Đóng góp
 
-Mọi đóng góp, phản hồi vui lòng tạo issue hoặc pull request trên GitHub.
+Ghi nguồn khi Clone về nhé..
