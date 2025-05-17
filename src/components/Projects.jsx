@@ -68,7 +68,7 @@ const Projects = () => {
         ,
         {
             title: 'Vehicle-Detector-Web',
-            desc: 'Website phát hiện xe (Vehicle-Detector-Web) giúp phân tích và nhận diện các loại xe từ hình ảnh hoặc video. Sử dụng YOLOv8.',
+            desc: 'Website phát hiện xe (Vehicle-Detector) giúp phân tích và nhận diện các loại xe từ hình ảnh hoặc video. Sử dụng YOLOv8.',
             image: Project08,
             live: "https://vehicledetector.vercel.app/",
             github: "https://github.com/Tuan980Blue/Vehicle-Detector-Web"
