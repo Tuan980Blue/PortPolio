@@ -1,10 +1,12 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import Portfolio from '../assets/Project01.png'
 import Project02 from '../assets/Project02-1.png'
 import Project03 from '../assets/Project03.png'
 import Project04 from '../assets/Project04-2.png'
 import Project05 from '../assets/Project05-1.png'
-import Project06 from '../assets/Project06-1.png'
+import Project06 from '../assets/Project06.png'
+import Project07 from '../assets/Project07.png'
+import Project08 from '../assets/Project08.png'
 import Coder from '../assets/coder.gif'
 import Cards from './Cards'
 
@@ -41,26 +43,35 @@ const Projects = () => {
             github: "https://github.com/Tuan980Blue/PortPolio"
         },
         {
-            title: 'WordPress Beauty Shop',
-            desc: 'Website bán hàng mỹ phẩm được xây dựng bằng WordPress với giao diện thân thiện.',
-            image: Project05,
-            live: "https://profiletuanhanhhuflit.vercel.app/",
-            github: "https://github.com/Tuan980Blue/PortPolio"
-        },
-        {
             title: 'Trung Tâm Thể Dục Thể Thao',
             desc: 'Website quản lý trung tâm thể thao, cung cấp thông tin về các lớp học và huấn luyện viên.',
-            image: Project06,
+            image: Project05,
             live: "https://profiletuanhanhhuflit.vercel.app/",
             github: "https://github.com/htilssu/TrungTamTheDucTheThao"
         }
         ,
         {
-            title: 'Trung Tâm Thể Dục Thể Thao',
-            desc: 'Website quản lý trung tâm thể thao, cung cấp thông tin về các lớp học và huấn luyện viên.',
+            title: 'Mạng xã hội FriendZone-Web',
+            desc: 'Website mạng xã hội FriendZone-Web, nơi người dùng có thể kết nối,nhắn tin, chia sẻ bài viết và tương tác với bạn bè.',
             image: Project06,
-            live: "https://profiletuanhanhhuflit.vercel.app/",
-            github: "https://github.com/htilssu/TrungTamTheDucTheThao"
+            live: "https://anhtuandev.id.vn/",
+            github: "https://github.com/Tuan980Blue/Web-Socket-FriendZone"
+        }
+        ,
+        {
+            title: 'Mạng xã hội FriendZone-App',
+            desc: 'Ứng dụng di động FriendZone-App, cho phép người dùng kết nối, nhắn tin, chia sẻ bài viết và tương tác với bạn bè trên nền tảng di động.',
+            image: Project07,
+            live: "https://anhtuandev.id.vn/",
+            github: "https://github.com/Tuan980Blue/FriendZone-App"
+        }
+        ,
+        {
+            title: 'Vehicle-Detector-Web',
+            desc: 'Website phát hiện xe (Vehicle-Detector-Web) giúp phân tích và nhận diện các loại xe từ hình ảnh hoặc video. Sử dụng YOLOv8.',
+            image: Project08,
+            live: "https://vehicledetector.vercel.app/",
+            github: "https://github.com/Tuan980Blue/Vehicle-Detector-Web"
         }
     ];
 
