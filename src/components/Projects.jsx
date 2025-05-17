@@ -22,31 +22,10 @@ const Projects = () => {
             github: "https://github.com/Tuan980Blue/PortPolio"
         },
         {
-            title: 'Game Battle Ship',
-            desc: 'Trò chơi hải chiến cổ điển, nơi người chơi có thể đấu trí với máy hoặc bạn bè.',
-            image: Project02,
-            live: "https://profiletuanhanhhuflit.vercel.app/",
-            github: "https://github.com/htilssu/BattleShip"
-        },
-        {
-            title: 'Shoppe Clone',
-            desc: 'Bản sao của Shopee với các tính năng cơ bản như tìm kiếm, đặt hàng, và thanh toán.',
-            image: Project03,
-            live: "https://profiletuanhanhhuflit.vercel.app/",
-            github: "https://github.com/htilssu/ShoppingWEB"
-        },
-        {
-            title: 'E-Wallet',
-            desc: 'Ứng dụng ví điện tử giúp người dùng quản lý tài chính cá nhân một cách hiệu quả.',
-            image: Project04,
-            live: "https://profiletuanhanhhuflit.vercel.app/",
-            github: "https://github.com/Tuan980Blue/PortPolio"
-        },
-        {
             title: 'Trung Tâm Thể Dục Thể Thao',
             desc: 'Website quản lý trung tâm thể thao, cung cấp thông tin về các lớp học và huấn luyện viên.',
             image: Project05,
-            live: "https://profiletuanhanhhuflit.vercel.app/",
+            live: "https://booking-soccer-field.vercel.app/",
             github: "https://github.com/htilssu/TrungTamTheDucTheThao"
         }
         ,
@@ -70,8 +49,30 @@ const Projects = () => {
             title: 'Vehicle-Detector-Web',
             desc: 'Website phát hiện xe (Vehicle-Detector) giúp phân tích và nhận diện các loại xe từ hình ảnh hoặc video. Sử dụng YOLOv8.',
             image: Project08,
-            live: "https://vehicledetector.vercel.app/",
+            live: "https://vehicle-detector-web.vercel.app/",
             github: "https://github.com/Tuan980Blue/Vehicle-Detector-Web"
+        }
+        ,
+        {
+            title: 'Game Battle Ship',
+            desc: 'Trò chơi hải chiến cổ điển, nơi người chơi có thể đấu trí với máy hoặc bạn bè.',
+            image: Project02,
+            live: "https://profiletuanhanhhuflit.vercel.app/",
+            github: "https://github.com/htilssu/BattleShip"
+        },
+        {
+            title: 'Shoppe Clone',
+            desc: 'Bản sao của Shopee với các tính năng cơ bản như tìm kiếm, đặt hàng, và thanh toán.',
+            image: Project03,
+            live: "https://profiletuanhanhhuflit.vercel.app/",
+            github: "https://github.com/htilssu/ShoppingWEB"
+        },
+        {
+            title: 'E-Wallet',
+            desc: 'Ứng dụng ví điện tử giúp người dùng quản lý tài chính cá nhân một cách hiệu quả.',
+            image: Project04,
+            live: "https://profiletuanhanhhuflit.vercel.app/",
+            github: "https://github.com/Tuan980Blue/PortPolio"
         }
     ];
 
