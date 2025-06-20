@@ -1,8 +1,5 @@
 ## 🌍 Live Preview -> https://tuananhhuflit.id.vn
 
-
-### 🚀 React + Vite Starter Project
-
 ## 📌 Giới thiệu
 
 Dự án Profile cá nhân được xây dựng với React và Vite.
