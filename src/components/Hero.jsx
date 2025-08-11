@@ -60,7 +60,7 @@ const Hero = ({ darkMode }) => {
                                 </div>
                             </motion.div>
                             <motion.a
-                                href="https://drive.google.com/file/d/1W7qxq70dsjR6olSmXPk4zVWCq-t-awcW/view?usp=drive_link"
+                                href="https://www.topcv.vn/xem-cv/VFcCAAZWAFRQAAJfB1BXVVEAUgYMBQYDAwECBg55d5"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold transition-all ${
@@ -71,7 +71,7 @@ const Hero = ({ darkMode }) => {
                                 transition={{duration: 0.5, delay: 1.5}}
                             >
                                 <MdOutlineFileDownload className="w-5 h-5"/>
-                                <span>Download CV</span>
+                                <span>Preview CV</span>
                             </motion.a>
 
                         </motion.div>
