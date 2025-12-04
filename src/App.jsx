@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -8,7 +8,6 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SliderRunNavBar from './customs/SliderRunNavBar.jsx';
-import { BackgroundBeamsWithCollisionDemo } from './Tests/BackgroundBeamsWithCollision/BackgroundBeamsWithCollisionDemo';
 import {MoreAboutMe} from "./components/MoreAboutMe.jsx";
 
 const App = () => {
@@ -28,7 +27,6 @@ const App = () => {
                 <MoreAboutMe />
                 <Contact darkMode={darkMode}/>
                 <Footer />
-                <BackgroundBeamsWithCollisionDemo />
             </>
         </Router>
     );

@@ -7,6 +7,7 @@ import Project05 from '../assets/Project05-1.png'
 import Project06 from '../assets/Project06.png'
 import Project07 from '../assets/Project07.png'
 import Project08 from '../assets/Project08.png'
+import Project09 from '../assets/Project09.png'
 import Coder from '../assets/coder.gif'
 import Cards from './Cards'
 
@@ -14,6 +15,13 @@ const Projects = () => {
     const [showAll, setShowAll] = useState(false);
 
     const projectJson = [
+        {
+            title: 'Cinema Movie Booking',
+            desc: 'Trang web bán vé xem phim.',
+            image: Project09,
+            live: "https://touchcinema-ta.vercel.app/",
+            github: "https://github.com/Tuan980Blue/PortPolio"
+        },
         {
             title: 'Profile',
             desc: 'Trang web cá nhân giới thiệu về tôi và các dự án đã thực hiện.',
