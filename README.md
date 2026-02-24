@@ -1,4 +1,4 @@
-## 🌍 Live Preview -> https://tuananhhuflit.id.vn
+## 🌍 Live Preview https://tuananhhuflit.id.vn
 
 ## 📌 Giới thiệu
 
