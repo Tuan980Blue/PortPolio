@@ -21,6 +21,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import LinkPreview from "../Tests/LinkPreview/link-preview.jsx";
 import {BackgroundBeamsWithCollision} from "../Tests/BackgroundBeamsWithCollision/BackgroundBeamsWithCollision.jsx";
+import Section from "./layout/Section.jsx";
 
 const About = () => {
     const controls = useAnimation();
@@ -53,8 +54,7 @@ const About = () => {
     return (
         <div className='relative' id='about'>
             <BackgroundBeamsWithCollision>
-                <div className='bg-white py-6 md:py-10'>
-                    <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+                <Section className='bg-white'>
                         <motion.div
                             initial={{opacity: 0, scale: 0.5}}
                             whileInView={{opacity: 1, scale: 1}}
@@ -106,72 +106,72 @@ const About = () => {
                                         <div className='flex items-center justify-center flex-wrap gap-3'>
                                             <div
                                                 className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                                <img src={Html} alt="" className='w-10'/>
+                                                <img src={Html} alt="HTML" loading="lazy" className='w-10'/>
                                                 <span className='font-semibold'>HTML</span>
                                             </div>
                                             <div
                                                 className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                                <img src={Css} alt="" className='w-8'/>
+                                                <img src={Css} alt="CSS" loading="lazy" className='w-8'/>
                                                 <span className='font-semibold'>CSS</span>
                                             </div>
                                             <div
                                                 className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                                <img src={Javascript} alt="" className='w-10'/>
+                                                <img src={Javascript} alt="JavaScript" loading="lazy" className='w-10'/>
                                                 <span className='font-semibold'>Javascript</span>
                                             </div>
                                             <div
                                                 className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300'>
-                                                <img src={ReactLogo} alt="" className='w-8 rounded-full'/>
+                                                <img src={ReactLogo} alt="React" loading="lazy" className='w-8 rounded-full'/>
                                                 <span className='font-semibold'>React</span>
                                             </div>
                                             <div
                                                 className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                                <img src={CshapeLogo} alt="" className='w-8'/>
+                                                <img src={CshapeLogo} alt="C#" loading="lazy" className='w-8'/>
                                                 <span className='font-semibold'>C #</span>
                                             </div>
                                             <div
                                                 className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                                <img src={Tailwind} alt="" className='w-8 rounded-full'/>
+                                                <img src={Tailwind} alt="Tailwind CSS" loading="lazy" className='w-8 rounded-full'/>
                                                 <span className='font-semibold'>Tailwind Css</span>
                                             </div>
                                             <div
                                                 className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                                <img src={Bootstrap} alt="" className='w-10'/>
+                                                <img src={Bootstrap} alt="Bootstrap" loading="lazy" className='w-10'/>
                                                 <span className='font-semibold'>Bootstrap</span>
                                             </div>
                                             <div
                                                 className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                                <img src={JavaLogo} alt="" className='w-10'/>
+                                                <img src={JavaLogo} alt="Java" loading="lazy" className='w-10'/>
                                                 <span className='font-semibold'>Java</span>
                                             </div>
                                             <div
                                                 className='border border-cyan-300 flex items-center  w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                                <img src={Mongodb} alt="" className='w-10'/>
+                                                <img src={Mongodb} alt="MongoDB" loading="lazy" className='w-10'/>
                                                 <span className='font-semibold'>Mongodb</span>
                                             </div>
                                             <div
                                                 className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                                <img src={SqlLogo} alt="" className='w-10'/>
+                                                <img src={SqlLogo} alt="SQL" loading="lazy" className='w-10'/>
                                                 <span className='font-semibold'>SQL</span>
                                             </div>
                                             <div
                                                 className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                                <img src={Springboot} alt="" className='w-9'/>
+                                                <img src={Springboot} alt="Spring Boot" loading="lazy" className='w-9'/>
                                                 <span className='font-semibold'>Spring Boot</span>
                                             </div>
                                             <div
                                                 className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                                <img src={PostmanLogo} alt="" className='w-9'/>
+                                                <img src={PostmanLogo} alt="Postman" loading="lazy" className='w-9'/>
                                                 <span className='font-semibold'>Postman</span>
                                             </div>
                                             <div
                                                 className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                                <img src={FigmaLogo} alt="" className='w-9'/>
+                                                <img src={FigmaLogo} alt="Figma" loading="lazy" className='w-9'/>
                                                 <span className='font-semibold'>Figma</span>
                                             </div>
                                             <div
                                                 className='border border-cyan-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-cyan-300'>
-                                                <img src={DockerLogo} alt="" className='w-9'/>
+                                                <img src={DockerLogo} alt="Docker" loading="lazy" className='w-9'/>
                                                 <span className='font-semibold'>Docker</span>
                                             </div>
                                         </div>
@@ -209,13 +209,12 @@ const About = () => {
                                             2025)</p>
                                         <p className="text-sm md:text-lg text-gray-600">Chuyên ngành: Công nghệ phần
                                             mềm</p>
-                                        <p className="text-sm md:text-lg text-gray-800 font-bold">GPA: 3.2/4</p>
+                                        <p className="text-sm md:text-lg text-gray-800 font-bold">GPA: 3.3/4</p>
                                     </div>
                                 </div>
                             </motion.div>
                         </div>
-                    </div>
-                </div>
+                </Section>
             </BackgroundBeamsWithCollision>
         </div>
     )

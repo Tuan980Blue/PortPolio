@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ParticleBackground from './components/Particle';
@@ -16,19 +15,17 @@ const App = () => {
     //call-Back.
     const toggleDarkMode = () => setDarkMode(!darkMode);
     return (
-        <Router>
-            <>
-                <ParticleBackground darkMode={darkMode}/>
-                <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-                <SliderRunNavBar />
-                <Hero darkMode={darkMode}/>
-                <About />
-                <Projects />
-                <MoreAboutMe />
-                <Contact darkMode={darkMode}/>
-                <Footer />
-            </>
-        </Router>
+        <>
+            <ParticleBackground darkMode={darkMode}/>
+            <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            <SliderRunNavBar />
+            <Hero darkMode={darkMode}/>
+            <About />
+            <Projects />
+            <MoreAboutMe />
+            <Contact darkMode={darkMode}/>
+            <Footer />
+        </>
     );
 };
 

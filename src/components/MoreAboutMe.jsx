@@ -1,4 +1,5 @@
 import { AnimatedTestimonials } from "../Tests/Animated/animated-testimonials.jsx";
+import Section from "./layout/Section.jsx";
 
 export function MoreAboutMe() {
     const testimonials = [
@@ -45,5 +46,9 @@ export function MoreAboutMe() {
             src: "HUFLIT-hoc-mon.png",
         }
     ];
-    return <AnimatedTestimonials testimonials={testimonials} />;
+    return (
+        <Section id="testimonials" className="bg-white">
+            <AnimatedTestimonials testimonials={testimonials} />
+        </Section>
+    );
 }
