@@ -6,6 +6,7 @@ import Tuan from '../../public/Tuan3.png';
 import SliderLogo from "../customs/SliderLogo.jsx";
 import CircularLogoSlider from "../customs/CircularLogoSlider.jsx";
 import { MdOutlineFileDownload } from "react-icons/md";
+import Section from "./layout/Section.jsx";
 
 const Hero = ({ darkMode }) => {
 
@@ -20,9 +21,8 @@ const Hero = ({ darkMode }) => {
 
 
     return (
-        <section className='relative'>
-            <div className='max-w-7xl mx-auto'>
-                <div className='flex flex-col md:flex-row items-center lg:h-[90vh] justify-between'>
+        <Section id="top" className="relative">
+                <div className='flex flex-col md:flex-row items-center lg:min-h-[90vh] justify-between'>
                     {/* Left Content */}
                     <div className='md:w-1/2 mb-8 md:mb-0 flex flex-col px-6 lg:px-0'>
                         <motion.div className="space-y-1 md:space-y-4">
@@ -115,8 +115,7 @@ const Hero = ({ darkMode }) => {
                 >
                     <CircularLogoSlider/>
                 </motion.div>
-            </div>
-        </section>
+        </Section>
     );
 };
 

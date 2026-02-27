@@ -5,20 +5,39 @@ import { loadFull } from "tsparticles";
 export default function Particle({darkMode}) {
   const [init, setInit] = useState(false);
   const [bgColor, setBgColor] = useState(darkMode ? "#000033" : "#e0f7fa");
+  const [enableParticles, setEnableParticles] = useState(true);
 
   useEffect(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return;
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const updatePreference = () => {
+      setEnableParticles(!mediaQuery.matches);
+    };
+    updatePreference();
+    mediaQuery.addEventListener("change", updatePreference);
+    return () => {
+      mediaQuery.removeEventListener("change", updatePreference);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!enableParticles) return;
     initParticlesEngine(async (engine) => {
       await loadFull(engine);
     }).then(() => {
       setInit(true);
     });
-  }, []);
+  }, [enableParticles]);
 
   // Khi darkMode thay đổi, cập nhật màu nền
   useEffect(() => {
     setBgColor(darkMode ? "#000033" : "#e0f7fa");
   }, [darkMode]);
 
+
+  if (!enableParticles) {
+    return null;
+  }
 
   return (
       <>

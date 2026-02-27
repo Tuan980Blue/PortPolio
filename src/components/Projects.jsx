@@ -10,6 +10,7 @@ import Project08 from '../assets/Project08.png'
 import Project09 from '../assets/Project09.png'
 import Coder from '../assets/coder.gif'
 import Cards from './Cards'
+import Section from "./layout/Section.jsx";
 
 const Projects = () => {
     const [showAll, setShowAll] = useState(false);
@@ -88,15 +89,15 @@ const Projects = () => {
     const displayedProjects = showAll ? projectJson : projectJson.slice(0, 6);
 
     return (
-        <section id='projects' className='relative bg-gray-900 py-6 px-4'>
-            <div className='mb-10 max-w-7xl mx-auto'>
+        <Section id='projects' className='relative bg-gray-900'>
+            <div className='mb-10'>
                 <h2 className='text-3xl font-bold mb-8 text-white border-b border-cyan-500 w-max pb-4 flex items-center'>
                     My Project
                     <img src={Coder} alt="Coder Icon" className="h-20 md:h-28 w-auto ml-2"/>
                 </h2>
                 <div className='grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center gap-10'>
                     {displayedProjects.map((items) => {
-                        return <Cards item={items}/>
+                        return <Cards key={items.title} item={items}/>
                     })}
                 </div>
                 {projectJson.length > 6 && (
@@ -108,7 +109,7 @@ const Projects = () => {
                     </div>
                 )}
             </div>
-        </section>
+        </Section>
     )
 }
 
